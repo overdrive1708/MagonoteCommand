@@ -11,10 +11,15 @@
 	<Copyright>Copyright © 2026 overdrive1708</Copyright>
 	<PackageProjectUrl>https://github.com/overdrive1708/MagonoteCommand</PackageProjectUrl>
 	<VersionPrefix>0.1.0</VersionPrefix>
+	<ApplicationIcon>Resources\ApplicationIcon.ico</ApplicationIcon>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DebugType>none</DebugType>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\ApplicationIcon.ico" />
+  </ItemGroup>
 
 </Project>
