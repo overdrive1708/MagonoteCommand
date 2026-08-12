@@ -59,5 +59,34 @@ namespace MagonoteCommand.Resources {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   致命的なエラーが発生しました｡
+        ///このアプリケーションを終了します｡
+        ///エラーの詳細な情報を[FatalErrorInformation.log]に保存しました｡ に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string MessageFatalError {
+            get {
+                return ResourceManager.GetString("MessageFatalError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   ===重要なお知らせ=== に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string MessageImportantNotice {
+            get {
+                return ResourceManager.GetString("MessageImportantNotice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   何かのキーを押下してください｡ に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string MessagePleasePressAnyKey {
+            get {
+                return ResourceManager.GetString("MessagePleasePressAnyKey", resourceCulture);
+            }
+        }
     }
 }
