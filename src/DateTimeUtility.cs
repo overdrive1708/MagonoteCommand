@@ -43,5 +43,33 @@ namespace MagonoteCommand
 
             return dateToday;
         }
+
+        /// <summary>
+        /// オフセット後の日付の取得処理
+        /// </summary>
+        /// <param name="calendarType">カレンダーの種類</param>
+        /// <param name="dateFormat">日付の書式</param>
+        /// <param name="offsetDays">オフセット日数</param>
+        /// <returns></returns>
+        public static string GetDateOffsetDays(CalendarType calendarType, string dateFormat, double offsetDays)
+        {
+            string dateOffset = string.Empty;
+
+            switch (calendarType)
+            {
+                case CalendarType.Gregorian:
+                    dateOffset = DateTime.Now.AddDays(offsetDays).ToString(dateFormat);
+                    break;
+                case CalendarType.Japanese:
+                    CultureInfo cultureJp = new("ja-jp", false);
+                    cultureJp.DateTimeFormat.Calendar = new JapaneseCalendar();
+                    dateOffset = DateTime.Now.AddDays(offsetDays).ToString(dateFormat, cultureJp);
+                    break;
+                default:
+                    break;
+            }
+
+            return dateOffset;
+        }
     }
 }

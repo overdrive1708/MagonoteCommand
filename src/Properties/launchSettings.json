@@ -26,6 +26,14 @@
     "GetDateToday-Help": {
       "commandName": "Project",
       "commandLineArgs": "GetDateToday --help"
+    },
+    "GetDateOffsetDays-Help": {
+      "commandName": "Project",
+      "commandLineArgs": "GetDateOffsetDays --help"
+    },
+    "GetDateOffsetDays-minus5": {
+      "commandName": "Project",
+      "commandLineArgs": "GetDateOffsetDays --offsetDays -5"
     }
   }
 }

@@ -61,6 +61,15 @@ namespace MagonoteCommand.Resources {
         }
         
         /// <summary>
+        ///   今日の日付からオフセットした日付を取得する に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string CommandDescriptionGetDateOffsetDays {
+            get {
+                return ResourceManager.GetString("CommandDescriptionGetDateOffsetDays", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   今日の日付を取得する に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string CommandDescriptionGetDateToday {
@@ -140,6 +149,15 @@ namespace MagonoteCommand.Resources {
         public static string OptionDescriptionDateFormat {
             get {
                 return ResourceManager.GetString("OptionDescriptionDateFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   オフセット日数 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string OptionDescriptionOffsetDays {
+            get {
+                return ResourceManager.GetString("OptionDescriptionOffsetDays", resourceCulture);
             }
         }
         

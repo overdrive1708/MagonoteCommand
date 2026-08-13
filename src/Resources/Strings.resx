@@ -132,4 +132,10 @@
   <data name="OptionErrorDateFormat" xml:space="preserve">
     <value>日付の書式が誤っています｡</value>
   </data>
+  <data name="OptionDescriptionOffsetDays" xml:space="preserve">
+    <value>オフセット日数</value>
+  </data>
+  <data name="CommandDescriptionGetDateOffsetDays" xml:space="preserve">
+    <value>今日の日付からオフセットした日付を取得する</value>
+  </data>
 </root>
