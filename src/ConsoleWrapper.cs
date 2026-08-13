@@ -7,13 +7,19 @@ namespace MagonoteCommand
     /// </summary>
     internal class ConsoleWrapper
     {
-        //--------------------------------------------------
-        // プロパティ
-        //--------------------------------------------------
         /// <summary>
-        /// verboseオプション
+        /// 出力先
         /// </summary>
-        public static bool IsVerboseMode { get; set; } = false;
+        public enum Destination
+        {
+            StandardOutput,     // 標準出力
+            StandardError       // 標準エラー出力
+        }
+
+        /// <summary>
+        /// ポーズ有効フラグ
+        /// </summary>
+        public static bool IsEnablePause { get; set; } = false;
 
         //--------------------------------------------------
         // メソッド
@@ -22,35 +28,32 @@ namespace MagonoteCommand
         /// Console.WriteLineラップ処理
         /// </summary>
         /// <param name="value">コンソールに出力する値</param>
-        internal static void WriteLine(string value)
+        /// <param name="destination">出力先</param>
+        internal static void WriteLine(string value, Destination destination)
         {
-            // verboseオプションが指定されている場合のみコンソールに出力する
-            if (IsVerboseMode)
+            switch (destination)
             {
-                Console.WriteLine(value);
+                case Destination.StandardOutput:
+                    Console.WriteLine(value);
+                    break;
+                case Destination.StandardError:
+                    Console.Error.WriteLine(value);
+                    break;
+                default:
+                    break;
             }
         }
 
         /// <summary>
-        /// Console.WriteLine拡張処理(エラーメッセージ用)
+        /// ポーズ処理
         /// </summary>
-        /// <param name="value">コンソールに出力する値</param>
-        internal static void WriteErrorLine(string value)
+        internal static void Pause()
         {
-            // verboseオプションに関わらずコンソールに赤字で出力する
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.Error.WriteLine(value);
-            Console.ResetColor();
-        }
-
-        /// <summary>
-        /// Console.ReadKeyラップ処理
-        /// </summary>
-        /// <returns>ConsoleKeyInfo</returns>
-        internal static ConsoleKeyInfo ReadKey()
-        {
-            // verboseオプションが指定されている場合のみコンソールから入力する
-            return IsVerboseMode ? Console.ReadKey() : new ConsoleKeyInfo();
+            if (IsEnablePause)
+            {
+                Console.WriteLine(Resources.Strings.MessagePleasePressAnyKey);
+                _ = Console.ReadKey();
+            }
         }
     }
 }
