@@ -55,14 +55,13 @@ namespace MagonoteCommand
             }
 
             // 例外が発生したことをコンソールに出力する
-            ConsoleWrapper.WriteErrorLine(Resources.Strings.MessageImportantNotice);
-            ConsoleWrapper.WriteErrorLine(Resources.Strings.MessageFatalError);
+            ConsoleWrapper.WriteLine(Resources.Strings.MessageImportantNotice, ConsoleWrapper.Destination.StandardError);
+            ConsoleWrapper.WriteLine(Resources.Strings.MessageFatalError, ConsoleWrapper.Destination.StandardError);
 
             // アプリケーションの終了待ち
-            ConsoleWrapper.WriteLine(Resources.Strings.MessagePleasePressAnyKey);
-            _ = ConsoleWrapper.ReadKey();
+            ConsoleWrapper.Pause();
 
-            // 終了する｡
+            // 終了する
             Environment.Exit(1);
         }
     }

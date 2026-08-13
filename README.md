@@ -27,27 +27,30 @@
 ---
 
 ## 機能一覧
-T.B.D.(サブコマンドと機能の対応表を作成する)
+| サブコマンド | 機能概要 |
+| --- | --- |
+| GetDateToday | 今日の日付を取得する |
+| GetDateOffsetDays | 今日の日付からオフセットした日付を取得する |
 
 ## ダウンロード方法
-[GitHubのReleases](https://github.com/overdrive1708/MagonoteCommand/releases)にあるLatestのAssetsより
-MagonoteCommand_vx.x.x.zipをダウンロードしてください｡
+[GitHubのReleases](https://github.com/overdrive1708/MagonoteCommand/releases)にあるLatestのAssetsよりMagonoteCommand_vx.x.x.zipをダウンロードしてください｡
 
 ## 使い方
-T.B.D.
+- [今日の日付を取得する](docs/HowToUseGetDateToday.md)
+- [今日の日付からオフセットした日付を取得する](docs/HowToUseGetDateOffsetDays.md)
 
 ## 開発環境
-Visual Studio 2026 Community
+Visual Studio 2026 Community  
 
 ## 使用しているライブラリ
-詳細は[NOTICE.md](NOTICE.md)を参照してください｡
+詳細は[NOTICE.md](NOTICE.md)を参照してください｡  
 
 ## ライセンス
 このプロジェクトはMITライセンスです。  
-詳細は [LICENSE](LICENSE) を参照してください。
+詳細は [LICENSE](LICENSE) を参照してください。  
 
 ## 不具合報告と機能要望
-[GitHubのIssue](https://github.com/overdrive1708/MagonoteCommand/issues)より報告してください｡
+[GitHubのIssue](https://github.com/overdrive1708/MagonoteCommand/issues)より報告してください｡  
 
 ## 作者
-[overdrive1708](https://github.com/overdrive1708)
+[overdrive1708](https://github.com/overdrive1708)  

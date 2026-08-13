@@ -61,6 +61,42 @@ namespace MagonoteCommand.Resources {
         }
         
         /// <summary>
+        ///   今日の日付からオフセットした日付を取得する に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string CommandDescriptionGetDateOffsetDays {
+            get {
+                return ResourceManager.GetString("CommandDescriptionGetDateOffsetDays", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   今日の日付を取得する に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string CommandDescriptionGetDateToday {
+            get {
+                return ResourceManager.GetString("CommandDescriptionGetDateToday", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   MagonoteCommand-かゆいところに手が届く!!孫の手のようなコマンド集- に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string CommandDescriptionRoot {
+            get {
+                return ResourceManager.GetString("CommandDescriptionRoot", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   終了時に何かのキーの押下を必要とする に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string CommandOptionEnablePause {
+            get {
+                return ResourceManager.GetString("CommandOptionEnablePause", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   致命的なエラーが発生しました｡
         ///このアプリケーションを終了します｡
         ///エラーの詳細な情報を[FatalErrorInformation.log]に保存しました｡ に類似しているローカライズされた文字列を検索します。
@@ -86,6 +122,60 @@ namespace MagonoteCommand.Resources {
         public static string MessagePleasePressAnyKey {
             get {
                 return ResourceManager.GetString("MessagePleasePressAnyKey", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   コマンドを指定してください。 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string MessagePleaseSpecifyCommand {
+            get {
+                return ResourceManager.GetString("MessagePleaseSpecifyCommand", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   カレンダーの種類 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string OptionDescriptionCalendarType {
+            get {
+                return ResourceManager.GetString("OptionDescriptionCalendarType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   日付の書式 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string OptionDescriptionDateFormat {
+            get {
+                return ResourceManager.GetString("OptionDescriptionDateFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   オフセット日数 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string OptionDescriptionOffsetDays {
+            get {
+                return ResourceManager.GetString("OptionDescriptionOffsetDays", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   カレンダーの種類は &apos;Gregorian&apos; または &apos;Japanese&apos; のいずれかで指定してください。 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string OptionErrorCalendarType {
+            get {
+                return ResourceManager.GetString("OptionErrorCalendarType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   日付の書式が誤っています｡ に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string OptionErrorDateFormat {
+            get {
+                return ResourceManager.GetString("OptionErrorDateFormat", resourceCulture);
             }
         }
     }

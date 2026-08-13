@@ -108,4 +108,34 @@
   <data name="MessagePleasePressAnyKey" xml:space="preserve">
     <value>何かのキーを押下してください｡</value>
   </data>
+  <data name="CommandDescriptionRoot" xml:space="preserve">
+    <value>MagonoteCommand-かゆいところに手が届く!!孫の手のようなコマンド集-</value>
+  </data>
+  <data name="CommandOptionEnablePause" xml:space="preserve">
+    <value>終了時に何かのキーの押下を必要とする</value>
+  </data>
+  <data name="CommandDescriptionGetDateToday" xml:space="preserve">
+    <value>今日の日付を取得する</value>
+  </data>
+  <data name="MessagePleaseSpecifyCommand" xml:space="preserve">
+    <value>コマンドを指定してください。</value>
+  </data>
+  <data name="OptionDescriptionCalendarType" xml:space="preserve">
+    <value>カレンダーの種類</value>
+  </data>
+  <data name="OptionErrorCalendarType" xml:space="preserve">
+    <value>カレンダーの種類は 'Gregorian' または 'Japanese' のいずれかで指定してください。</value>
+  </data>
+  <data name="OptionDescriptionDateFormat" xml:space="preserve">
+    <value>日付の書式</value>
+  </data>
+  <data name="OptionErrorDateFormat" xml:space="preserve">
+    <value>日付の書式が誤っています｡</value>
+  </data>
+  <data name="OptionDescriptionOffsetDays" xml:space="preserve">
+    <value>オフセット日数</value>
+  </data>
+  <data name="CommandDescriptionGetDateOffsetDays" xml:space="preserve">
+    <value>今日の日付からオフセットした日付を取得する</value>
+  </data>
 </root>
